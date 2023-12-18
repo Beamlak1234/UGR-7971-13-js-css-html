@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact page</title>
-    <link rel="stylesheet" href="responsivecss.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
 
   <body>
     <a href="#menu" class="menu-icon" id="menu"></a>
-   <header>
-    <ul>
-      <li>
-        <img class="logo" src="images/images/logo.jpg"  alt="logo">
-      </li>
-      <li><a class="active" href="Home.html">Home</a></li>
-      <li><a href="Aboutme.html">About</a></li>
-      <li><a href="Hobbies.html">Hobbies</a></li>
-      <li><a href="Places.html">Places</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
-      </nav>    
-  </header>
+    <header>
+      <div class="logo-nav-container">
+        <img class="logo" src="images/images/logo.jpg" height="40" width="40" alt="logo">
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="active" href="Home.html">Home</a></li>
+            <li><a href="Aboutme.html">About</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+            <li><a href="Places.html">Places</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger" class="hamburger">
+          &#9776;
+        </div>
+      </div>
+    </header>
 
   <main class="contact">
-    <form action="/submit" method="post">
+    <form id="contactForm" action="https://formspree.io/your-email@example.com" method="post">
+      
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br>
 
@@ -50,14 +55,14 @@
   <footer>
     <div class="social-media">
       <a href="https://t.me/BeamlakTH" target="_blank">
-        <img src="images/images/telegram.jpg" alt="Telegram">
+        <img src="images/images/telegram.jpg" alt="Telegram">BeamlakTH
       </a>
       <a href="https://instagram.com/beamliiii?utm_source=qr&igshid=YzU1NGVlODEzOA%3D%3D" target="_blank">
-        <img src="images/images/instagram.png" alt="Instagram">
+        <img src="images/images/instagram.png" alt="Instagram">beamliiii
       </a>
     </div>
     <p class="para">&copy;my social media contacts.</p>
   </footer>
-
+  <script src="js/script.js"></script>
   </body>
   </html>
